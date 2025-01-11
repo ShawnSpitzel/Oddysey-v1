@@ -7,7 +7,7 @@ type SelectComponentProps = {
   label?: string;
 };
 
-const SelectButton: React.FC<SelectComponentProps> = ({ value, onChange, options, label }) => {
+const SelectButton: React.FC<SelectComponentProps> = ({ value, onChange, options}) => {
   const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     onChange(e.target.value);
   };

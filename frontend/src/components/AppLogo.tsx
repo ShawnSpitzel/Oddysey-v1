@@ -1,4 +1,3 @@
-import React from "react";
 import OdysseyLogo from "../assets/images/viking-ship.png";
 
 const AppLogo = () => {
