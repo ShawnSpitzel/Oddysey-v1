@@ -1,0 +1,31 @@
+@import '@fontsource/inter';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+  .gradient-spotlight {
+    background-image: 
+    radial-gradient(circle at 55% center, rgba(169, 10, 169, 0.666) 35%, black 60%, rgba(0, 0, 255, 0.641) 90%),
+    linear-gradient(to bottom, rgba(195, 13, 150, 0.242) 60%, rgba(19, 0, 18, 0.922) 70% 100%),
+    linear-gradient(to right, black 25%, rgba(0, 0, 0, 0.232) 40%, rgba(4, 4, 149, 0.901) 70% 100%);
+    background-blend-mode: screen;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200%; /* Adjust this to control the gradient radius */
+    
+  }
+  .gradient-background{
+    background-image:
+    radial-gradient(circle at 0% 30%, rgb(230, 235, 252) 0%, rgba(239, 235, 252, 0.6) 50%, transparent 80%),
+    radial-gradient(circle at 10% 30%, rgb(233, 226, 234) 35%, rgba(233, 226, 234) 20%, transparent 80%),
+    radial-gradient(circle at 50% 70%, rgba(255, 245, 255, 1) 0%, rgba(240, 220, 250, 0.6) 60%, transparent 90%),
+    radial-gradient(circle at 40% 100%, rgba(233, 216, 246) 0%, rgba(234, 219, 244) 90%, transparent 100%);
+    background-blend-mode: normal, screen
+  }
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
