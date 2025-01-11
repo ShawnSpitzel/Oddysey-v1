@@ -5,7 +5,7 @@ from flask_cors import CORS # type: ignore
 from playsound import playsound # type: ignore
 
 app = Flask(__name__)
-CORS(app, origins="http://localhost:5173", methods=["POST", "GET"], supports_credentials=True)
+CORS(app, origins="oddysey.vercel.app", methods=["POST", "GET"], supports_credentials=True)
 @app.route('/start_conversation', methods=['POST'])
 def start_conversation():
     data = request.json

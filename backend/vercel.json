@@ -19,7 +19,11 @@
         "dest": "/frontend/build/$1"
       },
       {
-        "src": "/api/(.*)",
+        "src": "/start_conversation",
+        "dest": "/backend/main.py"
+      },
+      {
+        "src": "/receive_response",
         "dest": "/backend/main.py"
       }
     ]
