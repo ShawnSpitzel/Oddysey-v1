@@ -15,7 +15,6 @@ const Home = () => {
   const [language, setLanguage] = useState("");
   const [prompt, setPrompt] = useState("");
   const [userInput, setUserInput] = useState("");
-  const [response, setResponse] = useState("");
   const [difficulty, setDifficulty] = useState("Beginner");
   const [communicationStyle, setCommunicationStyle] = useState("Formal");
   const audioRef = useRef<HTMLAudioElement | null>(null);
@@ -25,8 +24,6 @@ const Home = () => {
   const [showAlert, setShowAlert] = useState(false);
   const {
     transcript,
-    listening,
-    resetTranscript,
     browserSupportsSpeechRecognition,
   } = useSpeechRecognition();
   if (!browserSupportsSpeechRecognition) {
