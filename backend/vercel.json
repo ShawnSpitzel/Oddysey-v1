@@ -2,14 +2,7 @@
     "version": 2,
     "builds": [
       {
-        "src": "frontend/package.json",
-        "use": "@vercel/static-build",
-        "config": {
-          "distDir": "frontend/build"
-        }
-      },
-      {
-        "src": "backend/main.py",
+        "src": "main.py",
         "use": "@vercel/python"
       }
     ],
@@ -20,11 +13,11 @@
       },
       {
         "src": "/start_conversation",
-        "dest": "/backend/main.py"
+        "dest": "main.py"
       },
       {
         "src": "/receive_response",
-        "dest": "/backend/main.py"
+        "dest": "main.py"
       }
     ]
   }
