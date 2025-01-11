@@ -43,7 +43,7 @@ const languageOptions = [
                 onClick={handleSpeech}>{isSpeaking}</button>
             </div>
             <div className="flex items-center gap-4 ">
-            <h1 className="text-[#A9A8A8] font-medium">0/250</h1>
+            <h1 className="text-[#A9A8A8] font-medium">{userInput.length}/250</h1>
             <button className="bg-buttonBg items-center flex justify-center h-9 w-9 rounded-lg text-white"
                 onClick={handleUserResponse}><IconArrowRight className="w-5 h-5" /></button>
             </div>
